@@ -72,11 +72,6 @@ set "display-panes-colour" "$onedark_blue"
 set "status-bg" "$onedark_black"
 set "status-fg" "$onedark_white"
 
-set "@prefix_highlight_fg" "$onedark_black"
-set "@prefix_highlight_bg" "$onedark_green"
-set "@prefix_highlight_copy_mode_attr" "fg=$onedark_black,bg=$onedark_green"
-set "@prefix_highlight_output_prefix" "  "
-
 status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
 date_format=$(get "@onedark_date_format" "%d/%m/%Y")
@@ -84,7 +79,7 @@ date_format=$(get "@onedark_date_format" "%d/%m/%Y")
 session_color="#{?client_prefix,$onedark_red,$onedark_green}"
 
 set "status-right" "#[fg=$onedark_white,bg=$onedark_black,nounderscore,noitalics]${time_format}  ${date_format} #[fg=$onedark_visual_grey,bg=$onedark_black]#[fg=$onedark_visual_grey,bg=$onedark_visual_grey]#[fg=$onedark_white, bg=$onedark_visual_grey]${status_widgets} #[fg=$onedark_green,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,bold] #h "
-set "status-left" "#[fg=$onedark_black,bg=$session_color,bold] #S #{prefix_highlight}#[fg=$session_color,bg=$onedark_black,nobold,nounderscore,noitalics]"
+set "status-left" "#[fg=$onedark_black,bg=$session_color,bold] #S #[fg=$session_color,bg=$onedark_black,nobold,nounderscore,noitalics]"
 
 set "window-status-format" "#[fg=$onedark_black,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_black] #I  #W #[fg=$onedark_black,bg=$onedark_black,nobold,nounderscore,noitalics]"
 set "window-status-current-format" "#[fg=$onedark_black,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_visual_grey,nobold] #I  #W#{?window_zoomed_flag,(Z),} #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
