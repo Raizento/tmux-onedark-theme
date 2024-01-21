@@ -1,6 +1,10 @@
 # tmux-onedark-theme
 A dark tmux color scheme for terminal that support [True Color](https://en.wikipedia.org/wiki/Color_depth#True_color_.2824-bit.29), based on [onedark.vim](https://github.com/joshdick/onedark.vim), which is inspired by [One Dark syntax theme](https://github.com/atom/one-dark-syntax) for the [Atom text editor](https://atom.io).
 
+# Important
+
+This is a fork of [odedlaz' tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme).
+
 ## Why?
 
 I wanted both vim and tmux to share the same color scheme.
