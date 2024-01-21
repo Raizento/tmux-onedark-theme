@@ -97,7 +97,9 @@ $ tmux source-file ~/.tmux.conf
 
 ### Symbols are missing
 
-   The theme requires Powerline symbols exist and set on your system. Follow [these instructions](https://github.com/powerline/fonts) to install them, then update your terminal fonts to use them.
+   The theme requires Powerline symbols exist and set on your system. 
+   Using a patched font (e.g. a [nerd font](https://www.nerdfonts.com/)) should do the trick.
+   Download your favorite one and configure your terminal emulator to use that font.
 
 ### Symbols are corrupted
 
